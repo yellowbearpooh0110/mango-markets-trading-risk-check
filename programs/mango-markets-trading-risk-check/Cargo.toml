@@ -20,3 +20,7 @@ overflow-checks = true
 
 [dependencies]
 anchor-lang = "0.24.2"
+anchor-spl = { version = "0.24.2", features = ["dex"] }
+serum_dex = { git="https://github.com/project-serum/serum-dex.git", features = ["no-entrypoint"] }
+mango = { git = "https://github.com/blockworks-foundation/mango-v3.git", default-features = false, features = ["no-entrypoint"] }
+mango-common = { git = "https://github.com/blockworks-foundation/mango-v3.git" }
